@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#04070B">
+  <title>Akira Martha — Content, Brand, Social</title>
+  <meta name="description" content="Akira Martha (AK) is a Communication student at UC Santa Barbara, class of 2027, working in content creation, brand and social media. Portfolio: SENS streetwear, the Cycle Breaker app, and a short film edit.">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Akira Martha — Content, Brand, Social">
+  <meta property="og:description" content="Communication student at UC Santa Barbara working in content, brand and social. Portfolio and case files.">
+  <meta property="og:url" content="https://akiramartha.github.io/">
+  <meta property="og:image" content="https://akiramartha.github.io/assets/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Akira Martha — Content, Brand, Social">
+  <meta name="twitter:description" content="Communication student at UC Santa Barbara working in content, brand and social. Portfolio and case files.">
+  <meta name="twitter:image" content="https://akiramartha.github.io/assets/og.png">
+  <!-- og:url and og:image above assume the repo publishes at akiramartha.github.io.
+       If the site lives at a different address, change those two lines (and the same
+       two in files/*.html) to the real address. Nothing else depends on it. -->
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/favicon.png" type="image/png" sizes="64x64">
+  <link rel="apple-touch-icon" href="assets/favicon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira+Stencil+One&family=Share+Tech+Mono&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== BOOT SEQUENCE ================================================
+       Plays once per browser. CSS keyframes only; js/main.js just hides it.
+       ==================================================================== -->
+  <div id="boot" class="boot">
+    <div class="boot-term">
+      <ol class="boot-log">
+        <li><span>&gt; Initializing secure terminal . . .</span></li>
+        <li><span>&gt; Uplink established · node SB-04</span><span class="st st-ok">[ OK ]</span></li>
+        <li><span>&gt; Query: personnel record AM-0742</span></li>
+        <li><span>&gt; Decrypting archive</span><span class="st st-n">[ 3 files ]</span></li>
+        <li><span>&gt; Biometric match</span><span class="st st-ok">[ CONFIRMED ]</span></li>
+      </ol>
+      <div class="boot-bar" aria-hidden="true"><i></i></div>
+      <div class="boot-stamp" aria-hidden="true">Clearance granted</div>
+    </div>
+    <button id="boot-skip" class="boot-skip" type="button">Skip</button>
+  </div>
+  <!-- Pre-paint check: returning visitors never see a frame of the boot.
+       localStorage throws in some private modes, so the whole thing is wrapped. -->
+  <script>try{if(localStorage.getItem("ak-cleared")==="1"){var b=document.getElementById("boot");if(b){b.className+=" boot--off";}}}catch(e){}</script>
+
+  <!-- ===== CRT OVERLAYS (decorative, never interactive) ================= -->
+  <div class="crt crt-scan" aria-hidden="true"></div>
+  <div class="crt crt-grain" aria-hidden="true"></div>
+  <div class="crt crt-vig" aria-hidden="true"></div>
+
+  <!-- ===== CLASSIFICATION RAILS ========================================= -->
+  <header class="rail rail-top">
+    <span>Top secret — personnel record</span>
+    <span class="rail-mid">Form AM-04 · Rev 2</span>
+    <span>Do not duplicate</span>
+  </header>
+
+  <main>
+    <!-- ===== THE CREDENTIAL ============================================= -->
+    <section class="landing" aria-label="Personnel credential">
+      <article class="card">
+
+        <div class="card-head">
+          <div class="issuer">
+            <svg class="mark" viewBox="0 0 24 24" width="26" height="26" aria-hidden="true" focusable="false">
+              <path d="M12 2.5 L21.5 21.5 H2.5 Z" fill="none" stroke="#5BE8FF" stroke-width="1.4" stroke-linejoin="round"/>
+              <path d="M7.4 15.2 H16.6" stroke="#5BE8FF" stroke-width="1.4"/>
+              <path d="M12 8.8 L15.4 15.2" stroke="#5BE8FF" stroke-width="1.4"/>
+              <circle cx="12" cy="6.2" r="1" fill="#5BE8FF"/>
+            </svg>
+            <span class="label issuer-text">Independent practice · Santa Barbara</span>
+          </div>
+          <div class="status">
+            <span class="label status-text">Status: Available</span>
+            <span class="leds" aria-hidden="true"><i class="led on"></i><i class="led"></i><i class="led"></i></span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          <div id="photo" class="photo">
+            <img src="assets/photo.webp" width="600" height="800" alt="Portrait of Akira Martha" fetchpriority="high">
+            <span class="static" aria-hidden="true"></span>
+            <span class="veil" aria-hidden="true"></span>
+            <span class="tick tick-tl" aria-hidden="true"></span>
+            <span class="tick tick-br" aria-hidden="true"></span>
+          </div>
+
+          <div class="ident">
+            <h1 class="name">Martha,<br>Akira</h1>
+            <span class="ref label">Ref AM-0742 · Issued 09.25.2025</span>
+            <div class="role">Content / Brand / Social</div>
+
+            <ul class="data">
+              <li>AK</li>
+              <li>Communication, UCSB</li>
+              <li>Class of 2027</li>
+              <li>Clearance: <span class="redact" tabindex="0">Level 03</span></li>
+              <li>Specialty: <span class="redact" tabindex="0">Short-form</span></li>
+              <li>Santa Barbara, CA</li>
+            </ul>
+
+            <div class="idblock">
+              <div>
+                <div class="digits">09<b>·</b>07<b>·</b>26<b>·</b>14</div>
+                <a class="email" href="mailto:akiramartha@gmail.com">akiramartha@gmail.com</a>
+              </div>
+              <div class="controls">
+                <a class="ctl" href="assets/akira-martha-resume.pdf" target="_blank" rel="noopener">Resume <span aria-hidden="true">↗</span></a>
+                <a class="ctl" href="https://www.linkedin.com/in/akira-martha-a48876306" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-foot">
+          <div class="scale" aria-hidden="true"></div>
+          <div class="card-status">
+            <a id="replay" class="replay" href="#top">↻ Replay</a>
+            <span class="mid">Personnel — active</span>
+            <span aria-hidden="true">0 1 2 3 4 5 6 7 8</span>
+          </div>
+        </div>
+      </article>
+
+      <div class="access-wrap">
+        <a id="access" class="access" href="#files">Access files</a>
+      </div>
+    </section>
+
+    <!-- ===== THE FILE INDEX =============================================
+         To add a project: copy files/_TEMPLATE.html, fill it in, then copy
+         one <a class="file"> row below and change its four values.
+         Status tag is one of: active · proto · delivered · archived
+         ================================================================== -->
+    <section id="files" class="files" aria-labelledby="files-title">
+      <div class="files-head">
+        <h2 id="files-title">Case files — index</h2>
+        <span class="label">Clearance required</span>
+      </div>
+
+      <nav class="file-list" aria-label="Project files">
+        <a class="file" href="files/001-sens.html">
+          <span class="num">File 001</span>
+          <span class="title">SENS</span>
+          <span class="kind">Brand / Streetwear</span>
+          <span class="tag active">Active</span>
+          <span class="arrow" aria-hidden="true">→</span>
+        </a>
+        <a class="file" href="files/002-cycle-breaker.html">
+          <span class="num">File 002</span>
+          <span class="title">Cycle Breaker</span>
+          <span class="kind">Product / PWA</span>
+          <span class="tag proto">Prototype</span>
+          <span class="arrow" aria-hidden="true">→</span>
+        </a>
+        <a class="file" href="files/003-paul-walker.html">
+          <span class="num">File 003</span>
+          <span class="title">Project: Paul Walker</span>
+          <span class="kind">Film / Edit</span>
+          <span class="tag delivered">Delivered</span>
+          <span class="arrow" aria-hidden="true">→</span>
+        </a>
+        <!-- FOURTH PROJECT: uncomment this row and edit the four values.
+             The page it points to should be a copy of files/_TEMPLATE.html.
+        <a class="file" href="files/004-project-name.html">
+          <span class="num">File 004</span>
+          <span class="title">Project Name</span>
+          <span class="kind">Category / Type</span>
+          <span class="tag active">Active</span>
+          <span class="arrow" aria-hidden="true">→</span>
+        </a>
+        -->
+      </nav>
+      <p class="files-end">End of index</p>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    Akira Martha<span class="sep">·</span><a href="mailto:akiramartha@gmail.com">akiramartha@gmail.com</a><span class="sep">·</span><a href="https://www.linkedin.com/in/akira-martha-a48876306" target="_blank" rel="noopener">LinkedIn</a>
+  </footer>
+
+  <div class="rail rail-bottom" aria-hidden="true">
+    <span>Classified · personnel — active</span>
+    <span class="rail-mid">Unauthorized disclosure prohibited</span>
+    <span>AM-0742</span>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
