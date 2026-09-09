@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<!--
+  HOW TO USE THIS FILE
+  1. Copy it and rename the copy, e.g. files/004-project-name.html (three digits, dash, short name).
+  2. Fill in every spot marked with a comment like this one. Delete the comments when you're done, or leave them; they don't show.
+  3. Add one row to the file index in index.html (there is a commented-out example row waiting there).
+  That's it. Do not touch css/style.css or js/main.js.
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#04070B">
+  <!-- PAGE TITLE: "Project Name — Akira Martha". Shows in the browser tab and in search results. -->
+  <title>Project Name — Akira Martha</title>
+  <!-- DESCRIPTION: one plain sentence, 120–160 characters, saying what this project is. Not in character. -->
+  <meta name="description" content="Project Name is a ... by Akira Martha.">
+  <meta property="og:type" content="article">
+  <!-- OG TITLE: same as the page title above -->
+  <meta property="og:title" content="Project Name — Akira Martha">
+  <!-- OG DESCRIPTION: same idea as the description, can be shorter -->
+  <meta property="og:description" content="One line about the project. Case file 004.">
+  <!-- OG URL: the site address plus this file's path -->
+  <meta property="og:url" content="https://akiramartha.github.io/files/004-project-name.html">
+  <meta property="og:image" content="https://akiramartha.github.io/assets/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="../assets/favicon.png" type="image/png" sizes="64x64">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira+Stencil+One&family=Share+Tech+Mono&display=swap">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <div class="crt crt-scan" aria-hidden="true"></div>
+  <div class="crt crt-grain" aria-hidden="true"></div>
+  <div class="crt crt-vig" aria-hidden="true"></div>
+
+  <header class="rail rail-top">
+    <span>Top secret — case file</span>
+    <!-- RAIL: file number and category, e.g. "File 004 · Brand / Campaign" -->
+    <span class="rail-mid">File 004 · Category / Type</span>
+    <span>Do not duplicate</span>
+  </header>
+
+  <main class="dossier">
+    <a class="back" href="../index.html#files">← Back to index</a>
+
+    <div class="file-meta">
+      <!-- FILE NUMBER: three digits, matches the filename and the index row -->
+      <span>File 004</span>
+      <span class="sep">·</span>
+      <!-- CATEGORY: two words with a slash, e.g. "Brand / Campaign", "Film / Edit", "Product / App" -->
+      <span>Category / Type</span>
+      <span class="sep">·</span>
+      <!-- STATUS TAG: keep the word "tag" and pick ONE second class:
+             active     = live and ongoing (cyan)
+             proto      = a working prototype, not public (amber)
+             delivered  = finished and handed over (red)
+             archived   = finished and no longer maintained (red, dimmer)
+           The visible text should match: Active / Prototype / Delivered / Archived -->
+      <span class="tag active">Active</span>
+    </div>
+
+    <!-- PROJECT TITLE: 1–4 words. Appears in stencil, so keep it short. -->
+    <h1>Project Name</h1>
+
+    <ul class="meta">
+      <!-- ROLE: what you did, 2–6 words, e.g. "Concept, design, build" or "Editor" -->
+      <li><span class="k">Role</span> <span class="v">Your role</span></li>
+      <!-- PERIOD: when, e.g. "Jan 2026 – Apr 2026" or "Spring 2026" -->
+      <li><span class="k">Period</span> <span class="v">Month Year – Month Year</span></li>
+      <!-- STATUS: a few words matching the tag, e.g. "Live", "Prototype · not publicly deployed", "Delivered" -->
+      <li><span class="k">Status</span> <span class="v">Live</span></li>
+      <!-- TOOLS: comma-separated, e.g. "CapCut, Figma, Photoshop" -->
+      <li><span class="k">Tools</span> <span class="v">Tool, tool, tool</span></li>
+      <!-- LINK: only if the project has a real public address. If it doesn't, DELETE this whole line.
+           Never leave a fake link or "coming soon". -->
+      <li><span class="k">Link</span> <a class="v" href="https://example.com/" target="_blank" rel="noopener">Visit the site ↗</a></li>
+    </ul>
+
+    <!-- ONE SENTENCE: what the thing is, in plain words. Someone who has never heard of it should understand it from this line alone. Max ~30 words. -->
+    <p class="lede">One sentence that says plainly what this project is.</p>
+
+    <h2 class="section-head">Evidence</h2>
+    <!-- EVIDENCE LAYOUT: keep class="evidence" for one image per row (good for wide screenshots).
+         Use class="evidence two-up" for two per row (good for phone screenshots). Both stack to one column on phones. -->
+    <div class="evidence">
+      <!-- SCREENSHOT: put the image file in the assets/ folder, named like 004-something.webp.
+           WebP format, 1600px wide max for wide shots, 900px wide for phone shots.
+           Set width and height to the image's real pixel size so the page doesn't jump while loading.
+           For phone screenshots change class="shot" to class="phone" to get the rounded phone frame.
+           A caption is required: one or two sentences saying what the reader is looking at. -->
+      <figure class="shot">
+        <img src="../assets/004-screenshot-1.webp" width="1600" height="1000" alt="Describe the image for someone who can't see it" loading="lazy">
+        <figcaption><b>Short label.</b> What this screenshot shows and why it matters.</figcaption>
+      </figure>
+      <!-- To add another screenshot, copy the whole <figure> ... </figure> block above and paste it here. -->
+    </div>
+
+    <!-- VIDEO (optional): delete this whole block if the project has no video.
+         Put the .mp4 and a poster image (a still from the video, WebP) in assets/.
+         Keep the mp4 under about 5MB. -->
+    <!--
+    <h2 class="section-head">Video</h2>
+    <figure class="video">
+      <video controls preload="none" playsinline poster="../assets/004-poster.webp" width="1080" height="1080">
+        <source src="../assets/004-video.mp4" type="video/mp4">
+      </video>
+      <figcaption><b>Short label.</b> One line about what the video is.</figcaption>
+    </figure>
+    -->
+
+    <h2 class="section-head">Notes</h2>
+    <div class="notes">
+      <!-- NOTES: 2–4 short paragraphs, roughly 120–200 words each, in your own words.
+           Suggested order: why it exists, what you decided and why, how far it got and what you'd do next.
+           Use plain <p> tags. Delete the class="todo" ones below once you've written yours. -->
+      <p class="todo">[ Paragraph 1 · about 120–200 words · why this exists ]</p>
+      <p class="todo">[ Paragraph 2 · about 120–200 words · the decisions ]</p>
+      <p class="todo">[ Paragraph 3 · about 120–200 words · how far it got ]</p>
+    </div>
+  </main>
+
+  <footer class="site-foot">
+    Akira Martha<span class="sep">·</span><a href="mailto:akiramartha@gmail.com">akiramartha@gmail.com</a><span class="sep">·</span><a href="https://www.linkedin.com/in/akira-martha-a48876306" target="_blank" rel="noopener">LinkedIn</a>
+  </footer>
+
+  <div class="rail rail-bottom" aria-hidden="true">
+    <!-- RAIL: match the file number -->
+    <span>Classified · case file 004</span>
+    <span class="rail-mid">Unauthorized disclosure prohibited</span>
+    <span>AM-0742</span>
+  </div>
+
+</body>
+</html>
